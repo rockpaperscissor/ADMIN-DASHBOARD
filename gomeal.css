@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@600&display=swap');
+/* font-family: 'Permanent Marker', cursive;
+font-family: 'Poppins', sans-serif; */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    
+    
+}
+.main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    
+    /* add a background image suitable */
+}
+.main .topname{
+    position: absolute;
+    left: 50%;
+    top: 3%;
+    
+    transform: translateX(-50%);
+    
+    border: 1px solid black;
+    font-family: 'Permanent Marker', cursive;
+    color: yellow;
+
+
+}
+.secondmain{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    top: 50%;
+    width: 90%;
+    height: 80%;
+    background-color:#e7e1e1;
+    transform: translate(-50%,-50%);
+    border: 1px solid black;
+
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas: 
+    "sidebar thirdmain";
+
+
+    
+}
+.thirdmain{
+    display: grid;
+    grid-template-rows: .75fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header"
+    "category"
+    "popular"
+    "bestseller";
+
+
+}
+ .thirdmain .header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* border: 1px solid black; */
+
+}
+.thirdmain .category{
+    /* border: 1px solid black; */
+
+}
+.thirdmain .header .name-notify,.search-addnewbtn{
+    display: flex;
+    justify-content: space-between;
+}
+.thirdmain .category,.popular,.bestseller{
+    display: block;
+}
+.thirdmain .category .image-container{
+    
+
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr  1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "c1 c2 c3 c4 c5 c6 c7 c8"
+    ;
+    
+    height:150px;
+    
+}
+.thirdmain .category .image-container .images{
+    background-color: #fff;
+    border-radius: 10px;
+    
+    padding: 15px;
+}
+.thirdmain .popular .popular-things{
+   
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "p1 p2 p3 p4"
+    ;
+    height:150px;
+
+}
+.thirdmain .popular .popular-things .pops{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+}
+.thirdmain .bestseller .bestsellers{
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "b1 b2 b3 b4 b5 b6"
+    ;
+    height:150px;
+
+}
+.thirdmain .bestseller .bestsellers .best{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+
+
+}
+/* temporaries */
+
+
+
+
